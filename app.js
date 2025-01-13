@@ -55,7 +55,7 @@ btn.addEventListener("click",async (evt)=>{
 
     console.log(rate);
 
-    let finalAmt = amtval * rate;
+    let finalAmt = (amtval * rate).toFixed(3);
     msg.innerText = `${amtval} ${fromCurr.value} = ${finalAmt} ${toCurr.value}`;
 })
 
